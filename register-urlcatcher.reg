@@ -1,8 +1,22 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT\urlcatcher]
-@="URL:Catcher Protocol"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\URLCatcher]
+@="URL Catcher"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\URLCatcher\Capabilities]
+"ApplicationName"="URL Catcher"
+"ApplicationDescription"="A simple URL catcher"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet\URLCATCHER\Capabilities\URLAssociations]
+"http"="URLCatcherURL"
+"https"="URLCatcherURL"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+"URL Catcher"="Software\\Clients\\StartMenuInternet\\URLCATCHER\\Capabilities"
+
+[HKEY_CLASSES_ROOT\URLCatcherURL]
+@="URL Catcher Protocol"
 "URL Protocol"=""
 
-[HKEY_CLASSES_ROOT\urlcatcher\shell\open\command]
-@="\"C:\\vm_url_catcher\\urlcatcher.exe\" \"%1\""
+[HKEY_CLASSES_ROOT\URLCatcherURL\shell\open\command]
+@="\"C:\\***path***\\urlcatcher.exe\" \"%1\""
